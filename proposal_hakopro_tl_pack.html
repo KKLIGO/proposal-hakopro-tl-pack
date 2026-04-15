@@ -59,7 +59,7 @@
   .mockup-dot{width:10px;height:10px;border-radius:50%}
   .mockup-dot.r{background:#ff5f57}.mockup-dot.y{background:#febc2e}.mockup-dot.g{background:#28c840}
   .mockup-url{background:#fff;border-radius:4px;padding:3px 10px;font-size:10px;color:#888;margin-left:10px;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .mockup-iframe-wrap{position:relative;width:100%;height:0;padding-bottom:62.5%;overflow:hidden;background:#f8f8f8}
+  .mockup-iframe-wrap{position:relative;width:100%;height:0;padding-bottom:75%;overflow:hidden;background:#f8f8f8}
   .mockup-iframe-wrap iframe{position:absolute;top:0;left:0;width:200%;height:200%;transform:scale(0.5);transform-origin:top left;border:none;z-index:2}
   .mockup-iframe-wrap .fallback{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;background:linear-gradient(135deg,#f8f8f8,#eee);color:#999;font-size:13px;text-align:center;padding:20px}
   .mockup-iframe-wrap .fallback .icon{font-size:32px;margin-bottom:8px}
@@ -77,33 +77,58 @@
   /* RESPONSIVE */
   @media(max-width:768px){
     .hero{padding:50px 20px 40px}
-    .hero h1{font-size:26px}
-    .hero p{font-size:14px}
-    .container{padding:0 16px}
-    section{padding:40px 0}
-    .section-title{font-size:22px}
-    .section-subtitle{font-size:13px;margin-bottom:24px}
+    .hero h1{font-size:24px}
+    .hero p{font-size:13px}
+    .container{padding:0 14px}
+    section{padding:36px 0}
+    .section-title{font-size:20px}
+    .section-subtitle{font-size:12px;margin-bottom:20px}
     .problem-grid{grid-template-columns:1fr}
-    .stat-big{font-size:52px}
+    .stat-big{font-size:48px}
     .solution-flow{gap:0}
-    .flow-item{padding:10px 6px}
-    .flow-circle{width:44px;height:44px;font-size:16px}
-    .flow-label{font-size:10px}
-    .flow-arrow{font-size:16px}
-    .img-showcase{grid-template-columns:1fr!important;gap:20px}
+    .flow-item{padding:8px 5px}
+    .flow-circle{width:40px;height:40px;font-size:15px}
+    .flow-label{font-size:9px}
+    .flow-arrow{font-size:14px}
+    .img-showcase{grid-template-columns:1fr!important;gap:16px}
     .device-grid{grid-template-columns:1fr!important}
-    .phone-mockup{width:160px!important;padding:8px!important;border-radius:22px!important;margin:0 auto}
+    .phone-mockup{width:180px!important;padding:10px!important;border-radius:24px!important;margin:0 auto}
     .hako-showcase{grid-template-columns:1fr!important}
     .pricing-grid{grid-template-columns:1fr}
-    .price-amount{font-size:36px}
+    .price-card-top{padding:24px 20px 16px}
+    .price-card-top h3{font-size:16px}
+    .price-amount{font-size:32px}
+    .price-amount .yen{font-size:16px}
+    .price-amount .unit{font-size:13px}
+    .price-annual{font-size:12px}
+    .price-period{font-size:12px}
+    .price-card-bottom{padding:16px 20px 20px}
+    .price-card-bottom li{font-size:12px;padding:6px 0}
     .merit-grid{grid-template-columns:1fr}
-    .breakdown-table{font-size:11px;display:block;overflow-x:auto}
-    .breakdown-table thead th,.breakdown-table tbody td{padding:8px 10px;white-space:nowrap}
-    .cta h2{font-size:22px}
-    .cta{padding:40px 20px}
-    .cta-contact{padding:12px 30px;font-size:14px}
-    .comparison{padding:24px}
-    .bar-label{font-size:12px}
+    .merit-item{padding:16px;gap:12px}
+    .merit-item h4{font-size:14px}
+    .merit-item p{font-size:12px}
+    .merit-num{width:32px;height:32px;font-size:14px}
+    .breakdown-table{font-size:10px;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .breakdown-table thead th,.breakdown-table tbody td{padding:8px 8px;white-space:nowrap}
+    .cta h2{font-size:20px}
+    .cta p{font-size:13px}
+    .cta{padding:36px 16px}
+    .cta-contact{padding:12px 28px;font-size:14px}
+    .comparison{padding:20px}
+    .comparison h3{font-size:16px}
+    .bar-label{font-size:11px}
+    .bar-fill{font-size:11px}
+    .point-box{padding:12px}
+    .point-box .text{font-size:12px}
+    .service-features li{font-size:12px}
+    .hako-card-content{padding:14px}
+    .hako-card-content h4{font-size:14px}
+    .hako-card-content p{font-size:11px}
+    .tl-item{padding:16px 18px}
+    .tl-item h4{font-size:14px}
+    .tl-item p{font-size:12px}
+    .footer{padding:20px;font-size:11px}
   }
 
   /* HAKO SHOWCASE */
@@ -381,8 +406,8 @@
         </div>
         <div>
           <div class="showcase-label">Transport Leaders 記事データ</div>
-          <div class="pdf-viewer"><iframe src="https://docs.google.com/gview?url=https%3A%2F%2Fgithub.com%2FKKLIGO%2Fproposal-hakopro-tl-pack%2Freleases%2Fdownload%2Fv1.0%2FLEADERS0404.pdf&embedded=true" loading="lazy" allowfullscreen></iframe></div>
-          <a href="https://github.com/KKLIGO/proposal-hakopro-tl-pack/releases/download/v1.0/LEADERS0404.pdf" target="_blank" style="display:inline-block;margin-top:8px;font-size:12px;color:#e85d04;text-decoration:none;font-weight:600">▶ PDFを直接開く →</a>
+          <div class="pdf-viewer"><iframe src="https://docs.google.com/gview?url=https%3A%2F%2Fgithub.com%2FKKLIGO%2Fproposal-hakopro-tl-pack%2Freleases%2Fdownload%2Fv1.0%2Fleaders_preview.pdf&embedded=true" loading="lazy" allowfullscreen></iframe></div>
+          <a href="https://github.com/KKLIGO/proposal-hakopro-tl-pack/releases/download/v1.0/LEADERS0404.pdf" target="_blank" style="display:inline-block;margin-top:8px;font-size:12px;color:#e85d04;text-decoration:none;font-weight:600">▶ PDFを直接開く（全ページ） →</a>
         </div>
       </div>
     </div>
