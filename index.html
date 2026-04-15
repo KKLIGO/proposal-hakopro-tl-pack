@@ -8,7 +8,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:'Noto Sans JP',sans-serif;background:#f5f6fa;color:#2c3e50;line-height:1.7}
-  .hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;padding:80px 40px 60px;text-align:right;position:relative;overflow:hidden}
+  .hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;padding:80px 40px 60px;text-align:left;position:relative;overflow:hidden}
+  .hero .container{max-width:1000px;margin:0 auto;padding-left:60px}
   .hero-bg{position:absolute;top:0;right:0;width:65%;height:100%;background:url('hakopro_top.png') right center/cover no-repeat;opacity:.25;mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.3) 20%,rgba(0,0,0,.7) 50%,rgba(0,0,0,.9) 100%);-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.3) 20%,rgba(0,0,0,.7) 50%,rgba(0,0,0,.9) 100%);z-index:0}
   .hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(232,93,4,.15) 0%,transparent 70%);border-radius:50%}
   .hero-badge{display:inline-block;background:#e85d04;color:#fff;padding:6px 24px;border-radius:30px;font-size:14px;font-weight:600;letter-spacing:1px;margin-bottom:24px;position:relative;z-index:1}
@@ -82,6 +83,7 @@
   /* RESPONSIVE */
   @media(max-width:768px){
     .hero{padding:50px 20px 40px;text-align:center}
+    .hero .container{padding-left:14px!important}
     .hero h1{font-size:24px}
     .hero p{font-size:13px}
     .container{padding:0 14px}
@@ -225,10 +227,12 @@
 <!-- HERO -->
 <div class="hero">
   <div class="hero-bg"></div>
-  <div class="hero-badge">PROPOSAL 2026</div>
-  <h1>採用を強化する<br><span>WEBブランディング</span>戦略</h1>
-  <p>ハコプロ × TRANSPORT LEADERS パックで<br>求職者の「最後の5分」を味方に。採用率を最大化する統合プランのご提案</p>
-  <div class="hero-company">株式会社LIGO</div>
+  <div class="container">
+    <div class="hero-badge">PROPOSAL 2026</div>
+    <h1>採用を強化する<br><span>WEBブランディング</span>戦略</h1>
+    <p>ハコプロ × TRANSPORT LEADERS パックで<br>求職者の「最後の5分」を味方に。採用率を最大化する統合プランのご提案</p>
+    <div class="hero-company">株式会社LIGO</div>
+  </div>
 </div>
 
 <!-- PROBLEM -->
