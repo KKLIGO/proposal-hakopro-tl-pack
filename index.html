@@ -99,6 +99,7 @@
     .device-grid{grid-template-columns:1fr!important}
     .phone-mockup{width:180px!important;padding:10px!important;border-radius:24px!important;margin:0 auto}
     .hako-embed-grid{grid-template-columns:1fr!important}
+    .hako-embed-row{grid-template-columns:1fr!important}
     .video-embed{padding-bottom:75%!important}
     .pricing-grid{grid-template-columns:1fr!important;gap:20px!important}
     .price-card-top{padding:24px 20px 16px}
@@ -139,8 +140,10 @@
   }
 
   /* HAKO SHOWCASE */
-  .hako-embed-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;margin-top:32px}
-  .hako-embed-card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,.05);border:1px solid #eee}
+  .hako-embed-grid{display:grid;grid-template-columns:1fr;gap:32px;margin-top:32px}
+  .hako-embed-row{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .hako-embed-card{background:#fff;border-radius:14px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.05);border:1px solid #eee}
+  .hako-embed-card.wide .mockup-iframe-wrap{padding-bottom:50%}
   .hako-embed-info{margin-top:14px}
   .hako-embed-info h4{font-size:15px;font-weight:700;margin-bottom:6px;color:#1a1a2e}
   .hako-embed-info p{font-size:12px;color:#888;margin-bottom:8px;line-height:1.6}
@@ -393,14 +396,14 @@
     <div class="section-title">ハコプロTLパック シリーズ</div>
     <div class="section-subtitle">WEB記事・紙媒体・動画の3メディアで企業ブランディングを強化</div>
     <div class="hako-embed-grid">
-      <!-- WEB記事取材 -->
-      <div class="hako-embed-card">
+      <!-- WEB記事取材（全幅） -->
+      <div class="hako-embed-card wide">
         <div class="showcase-label">WEB記事 掲載イメージ</div>
         <div class="mockup-frame">
-          <div class="mockup-browser-bar" style="padding:5px 10px">
-            <div class="mockup-dot r" style="width:7px;height:7px"></div>
-            <div class="mockup-dot y" style="width:7px;height:7px"></div>
-            <div class="mockup-dot g" style="width:7px;height:7px"></div>
+          <div class="mockup-browser-bar" style="padding:6px 12px">
+            <div class="mockup-dot r" style="width:8px;height:8px"></div>
+            <div class="mockup-dot y" style="width:8px;height:8px"></div>
+            <div class="mockup-dot g" style="width:8px;height:8px"></div>
             <div class="mockup-url">media.hakopro.jp</div>
           </div>
           <div class="mockup-iframe-wrap">
@@ -415,30 +418,33 @@
         </div>
       </div>
 
-      <!-- 記事データ掲載（LEADERS誌） -->
-      <div class="hako-embed-card">
-        <div class="showcase-label">Transport Leaders 記事データ</div>
-        <div class="pdf-viewer"><iframe src="https://docs.google.com/gview?url=https%3A%2F%2Fgithub.com%2FKKLIGO%2Fproposal-hakopro-tl-pack%2Freleases%2Fdownload%2Fv1.0%2Fleaders_preview.pdf&embedded=true" loading="lazy" allowfullscreen></iframe></div>
-        <div class="hako-embed-info">
-          <h4>記事データ掲載（LEADERS誌）</h4>
-          <p>A4変形フルカラー冊子に見開き掲載。面接時の動機づけや金融機関への信用材料にも。記事データ（PDF）納品。</p>
-          <div class="hako-tag">単品 39万円～</div>
+      <!-- PDF + 動画（2カラム） -->
+      <div class="hako-embed-row">
+        <!-- 記事データ掲載（LEADERS誌） -->
+        <div class="hako-embed-card">
+          <div class="showcase-label">Transport Leaders 記事データ</div>
+          <div class="pdf-viewer"><iframe src="https://docs.google.com/gview?url=https%3A%2F%2Fgithub.com%2FKKLIGO%2Fproposal-hakopro-tl-pack%2Freleases%2Fdownload%2Fv1.0%2Fleaders_preview.pdf&embedded=true" loading="lazy" allowfullscreen></iframe></div>
+          <div class="hako-embed-info">
+            <h4>記事データ掲載（LEADERS誌）</h4>
+            <p>A4変形フルカラー冊子に見開き掲載。面接時の動機づけや金融機関への信用材料にも。記事データ（PDF）納品。</p>
+            <div class="hako-tag">単品 39万円～</div>
+          </div>
         </div>
-      </div>
 
-      <!-- PR動画 -->
-      <div class="hako-embed-card">
-        <div class="showcase-label">PR動画 サンプル</div>
-        <div class="video-embed" style="position:relative;width:100%;padding-bottom:56.25%;border-radius:10px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.12);background:#000">
-          <iframe src="https://drive.google.com/file/d/1VmauV_zubDb8J5iGmiNwg2yCbr1jObMu/preview" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div class="hako-embed-info">
-          <h4>PR動画</h4>
-          <p>テキストの5,000倍伝わる動画コンテンツ。採用動画（求職者向け）と企業PR（荷主向け）の2種対応。</p>
-          <div class="hako-tag">1本 15万円～</div>
+        <!-- PR動画 -->
+        <div class="hako-embed-card">
+          <div class="showcase-label">PR動画 サンプル</div>
+          <div class="video-embed" style="position:relative;width:100%;padding-bottom:56.25%;border-radius:10px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.12);background:#000">
+            <iframe src="https://drive.google.com/file/d/1VmauV_zubDb8J5iGmiNwg2yCbr1jObMu/preview" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <div class="hako-embed-info">
+            <h4>PR動画</h4>
+            <p>テキストの5,000倍伝わる動画コンテンツ。採用動画（求職者向け）と企業PR（荷主向け）の2種対応。</p>
+            <div class="hako-tag">1本 15万円～</div>
+          </div>
         </div>
       </div>
-    </div>    </div>
+    </div>
   </div>
 </section>
 
